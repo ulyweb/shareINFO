@@ -1,0 +1,99 @@
+
+
+📄 Instructions to Send to Your Coworker
+Here is the exact message you can copy and send to your coworker along with the zip file:
+
+🎉 Yes! The One-Click Onboarding Wizard is Ready!
+I have updated install_mac.sh and re-packaged the entire distribution zip so that whenever you give this file to a coworker, it guides them through an interactive onboarding wizard on first run.
+
+📦 The Package to Share
+Give your coworker this file: 📁 /home/uly/Documents/Antigravity/Projects/move-MACOS/JarvisAI-macOS.zip
+
+
+
+
+# 🚀 AI Assistant — One-Click Setup Guide for macOS
+
+Welcome! This package installs your own 100% private, voice-interactive AI assistant with persistent memory and 3D visualizers.
+
+---
+
+### 🛠️ Step 0: Quick Mac Prep (Run Once if you don't have Homebrew/Ollama)
+
+Open your Mac **Terminal** (`Cmd + Space` -> type `Terminal`) and paste:
+
+1. **Install Homebrew** (if you don't have it):
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. **Install Ollama** (Local AI Engine):
+   brew install ollama
+   (Or download the one-click Mac app from https://ollama.com)
+
+---
+
+### 📦 Step 1: Unzip the Project
+In your Terminal:
+unzip JarvisAI-macOS.zip -d ~/Documents/
+cd ~/Documents/JarvisAI
+
+---
+
+### 🧙 Step 2: Run the Onboarding Wizard
+./install_mac.sh
+
+The installer will ask you:
+1. "What is your name / what should the AI call you?" (e.g. Alex)
+2. "What would you like to name your AI Assistant?" (e.g. Athena, Friday, AlexAI)
+3. "Choose your AI Brain": Select [1] for 100% Offline Local Model (Ollama)
+4. Select model: [1] qwen2.5:14b (Recommended for 16GB+ Macs) or [2] qwen2.5:7b (for 8GB Macs)
+
+The installer will automatically download the model, build the environment, and warm the speech audio!
+
+---
+
+### 🎙️ Step 3: Launch Your Assistant!
+./start_jarvis.sh
+
+• Just speak out loud into your microphone (Hands-free listening is active).
+• 3D Visualizer: Open http://127.0.0.1:8790 in your browser (Press Space for 3D flythrough).
+• Memory: Any preferences or tasks you say ("Remember that...") are permanently saved!
+
+
+
+
+
+
+🧙 What Your Coworker Will Experience (The Onboarding Flow)
+When your coworker unzips the folder and runs ./install_mac.sh:
+
+bash
+
+
+unzip JarvisAI-macOS.zip -d ~/Documents/
+cd ~/Documents/JarvisAI
+./install_mac.sh
+The installer will interactively ask them:
+
+"What is your name / what should the AI call you?" (e.g., Alex)
+"What would you like to name your AI Assistant?" (e.g., AlexAI, Friday, Athena, etc.)
+"Choose your primary AI Brain:"
+[1] 100% Offline Local Model via Ollama (Zero API keys, infinite free turns — Recommended)
+[2] Google Gemini Cloud (Cloud API key)
+If they choose Local Ollama:
+It lets them select qwen2.5:14b, qwen2.5:7b, or llama3.1:8b.
+It automatically downloads the model for them!
+⚙️ What the Installer Automates for Them:
+Automatically updates all configs (backtalk.json, ai-visualizer.json, barehands.json) with their chosen assistant name.
+Automatically personalizes the system identity and Memory Vault (Vault/02 - Profile/about-me.md) for their user profile.
+Installs audio libraries and builds the Mac-native Python environment.
+Pre-downloads and warms the local neural speech models (Kokoro + Whisper).
+🚀 To Start:
+All they do after installation is run:
+
+bash
+
+
+./start_jarvis.sh
+Their personalized AI will greet them aloud through their Mac speakers and start listening immediately!
+
+9:56 PM
